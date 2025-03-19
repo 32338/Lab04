@@ -3,7 +3,7 @@ import java.sql.*;
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Boa noite!");
-        String url = "jdbc:postgresql://aws-0-sa-east-1.pooler.supabase.com:6543/postgres?user=postgres.mlfmvbhmbmirmmrhfzsv&password=Tresdfghjm,lkjh";
+        String url = "jdbc:postgresql://db.mlfmvbhmbmirmmrhfzsv.supabase.co:5432/postgres?user=postgres&password=Tresdfghjm,lkjh";
         Connection conexao = DriverManager.getConnection(url);
         String sql = "SELECT * FROM contas";
         PreparedStatement stm = conexao.prepareStatement(sql);
